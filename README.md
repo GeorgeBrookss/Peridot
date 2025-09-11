@@ -1,46 +1,75 @@
-# Getting Started with Create React App
+# Boilerplate React com TypeScript, Styled Components & ESLint
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+## Descrição do Projeto
 
 In the project directory, you can run:
 
-### `npm start`
+### Este projeto é um boilerplate moderno para aplicações React, desenvolvido com foco em produtividade e boas práticas. A proposta é fornecer uma base sólida para iniciar novos projetos sem precisar configurar do zero ferramentas essenciais do ecossistema React. Com este boilerplate, você já terá:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Configuração inicial pronta para React com TypeScript.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Estilização com Styled Components.
 
-### `npm test`
+Padrões de qualidade e linting configurados com ESLint e Prettier.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Estrutura de pastas organizada para facilitar o desenvolvimento.
 
-### `npm run build`
+### Objetivo do Projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Fornecer um ponto de partida confiável para desenvolvedores que desejam iniciar aplicações modernas em React, eliminando o tempo gasto com configurações repetitivas.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Tecnologias Utilizadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Linguagem: TypeScript
 
-### `npm run eject`
+Biblioteca Frontend: React
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Estilização: Styled Components
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Linting e Formatação: ESLint + Prettier
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Gerenciador de Pacotes: npm (pode ser usado yarn também)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Instalação e Configuração
 
-## Learn More
+Clone o repositório
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`git clone https://github.com/SEU_USUARIO/NOME_DO_REPO.git`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Acesse a pasta do projeto
+`cd NOME_DO_REPO`
+
+Instale as dependências
+````
+npm install
+# ou
+yarn install
+````
+Build para produção
+````
+npm run build
+# ou
+yarn build
+
+````
+
+**Outros arquivos importantes:**
+
+.eslintrc.json → Configuração do ESLint
+
+.prettierrc → Configuração do Prettier
+
+tsconfig.json → Configuração do TypeScript
+
+### Como Usar
+
+Após instalar as dependências, já é possível começar a criar seus componentes dentro da pasta src/.
+
+Utilize Styled Components para criar estilos com facilidade.
+
+O ESLint e o Prettier estão prontos para manter o código padronizado e limpo.
+
+### Conclusão
+
+Este boilerplate foi criado para agilizar o início de projetos React e garantir boas práticas desde a primeira linha de código.
+Com ele, você pode se concentrar no desenvolvimento da aplicação, sem perder tempo configurando o ambiente.
