@@ -2,7 +2,6 @@
 
 ## Descrição do Projeto
 
-In the project directory, you can run:
 
 ### Este projeto é um boilerplate moderno para aplicações React, desenvolvido com foco em produtividade e boas práticas. A proposta é fornecer uma base sólida para iniciar novos projetos sem precisar configurar do zero ferramentas essenciais do ecossistema React. Com este boilerplate, você já terá:
 
