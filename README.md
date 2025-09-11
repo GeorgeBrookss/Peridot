@@ -33,10 +33,10 @@ Gerenciador de Pacotes: npm (pode ser usado yarn também)
 
 Clone o repositório
 
-`git clone https://github.com/SEU_USUARIO/NOME_DO_REPO.git`
+`git clone https://github.com/GeorgeBrookss/Boilerplate-Front-end`
 
 Acesse a pasta do projeto
-`cd NOME_DO_REPO`
+`cd Boilerplate-Front-end`
 
 Instale as dependências
 ````
