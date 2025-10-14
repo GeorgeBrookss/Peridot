@@ -1,14 +1,11 @@
 import * as Styled from './Post-Details-Styled'
 import Logo from '../../images/Peridot-logo.png'
 import ProfilePlaceholder from '../../images/Peridot-Logo-fundo.jpeg'
-import PostButtonImg from '../../images/PostButton.png'
-import LikeOff from '../../images/LikeOff.png'
 import LikeOn from '../../images/LikeOn.png'
 import CommentButton from '../../images/CommentButton.png'
 import React, { useState, useEffect, CSSProperties } from 'react'
 import axios from 'axios'
 import { useNavigate, useParams } from 'react-router-dom'
-import { Background } from '../Feed-Page/Feed-Styled'
 
 const PostDetails = () => {
   interface User {
@@ -367,6 +364,29 @@ const PostDetails = () => {
 
         <div>
           <Styled.FeedCamp>
+            <h1
+              className="LogoMobile"
+              onClick={() => navigate('/feed')}
+              style={{ cursor: 'pointer' }}
+            >
+              <img src={Logo} alt="LogoMobile" /> Peridot .
+            </h1>
+            <button
+              onClick={() => navigate('/feed')}
+              type="button"
+              style={{
+                color: '#ffffff',
+                marginRight: '10px',
+                marginBottom: '20px',
+                background: 'linear-gradient(#0a4500, #77ff7aa5)',
+                borderRadius: '20px',
+                padding: '5px',
+                border: '1px solid #0000',
+                cursor: 'pointer'
+              }}
+            >
+              Voltar
+            </button>
             <div
               key={post.id}
               style={{
@@ -474,22 +494,6 @@ const PostDetails = () => {
           </Styled.FeedCamp>
 
           <Styled.PostArea>
-            <button
-              onClick={() => navigate('/feed')}
-              type="button"
-              style={{
-                color: '#ffffff',
-                marginRight: '10px',
-                background: 'linear-gradient(#0a4500, #77ff7aa5)',
-                borderRadius: '20px',
-                padding: '5px',
-                border: '1px solid #0000',
-                cursor: 'pointer'
-              }}
-            >
-              Voltar
-            </button>
-
             <form onSubmit={HandleSubmitComment}>
               <div className="postarea">
                 <textarea
@@ -782,7 +786,7 @@ const PostDetails = () => {
             <ul>
               <Styled.SuggestCamp>
                 {Array.isArray(suggestedPosts) && suggestedPosts.length > 0 ? (
-                  suggestedPosts.slice(0, 5).map((post) => (
+                  suggestedPosts.slice(0, 4).map((post) => (
                     <li key={post.id}>
                       <a onClick={() => HandleComments(post.id)} href="#">
                         <strong>
