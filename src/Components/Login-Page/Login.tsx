@@ -10,7 +10,7 @@ import {
 } from './Login-Styles'
 import PeridotLog from '../../images/Peridot-logo.png'
 
-const API_URL = 'http://127.0.0.1:8000/api/auth/jwt/create/'
+const API_URL = 'https://georgebks.pythonanywhere.com/api/auth/jwt/create/'
 
 const LoginPage = () => {
   const [username, setUsername] = useState('')

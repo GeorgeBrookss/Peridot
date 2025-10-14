@@ -85,7 +85,7 @@ const Feed = () => {
       }
 
       const response = await axios.post<Post>(
-        'http://127.0.0.1:8000/api/posts/',
+        'https://georgebks.pythonanywhere.com/api/posts/',
         formData,
         {
           headers: {
@@ -118,7 +118,7 @@ const Feed = () => {
       return
     }
 
-    const url = `http://127.0.0.1:8000/api/posts/${postId}/like/`
+    const url = `https://georgebks.pythonanywhere.com/api/posts/${postId}/like/`
     const config = { headers: { Authorization: `Bearer ${authToken}` } }
 
     try {
@@ -167,7 +167,10 @@ const Feed = () => {
     const config = { headers: { Authorization: `Bearer ${authToken}` } }
 
     try {
-      await axios.delete(`http://127.0.0.1:8000/api/posts/${postId}/`, config)
+      await axios.delete(
+        `https://georgebks.pythonanywhere.com/api/posts/${postId}/`,
+        config
+      )
       setFeedPosts((prevPosts) =>
         prevPosts.filter((post) => post.id !== postId)
       )
@@ -196,7 +199,7 @@ const Feed = () => {
 
     try {
       const response = await axios.put<Post>(
-        `http://127.0.0.1:8000/api/posts/${postId}/`,
+        `https://georgebks.pythonanywhere.com/api/posts/${postId}/`,
         { content: editingPostContent },
         config
       )
@@ -231,10 +234,13 @@ const Feed = () => {
 
       setIsSearching(true)
       try {
-        const response = await axios.get('http://127.0.0.1:8000/api/search/', {
-          headers: { Authorization: `Bearer ${authToken}` },
-          params: { query: searchQuery }
-        })
+        const response = await axios.get(
+          'https://georgebks.pythonanywhere.com/api/search/',
+          {
+            headers: { Authorization: `Bearer ${authToken}` },
+            params: { query: searchQuery }
+          }
+        )
         setSearchResults(response.data)
       } catch (err) {
         console.error('Erro ao buscar:', err)
@@ -259,7 +265,7 @@ const Feed = () => {
 
       try {
         const userResponse = await axios.get<User>(
-          'http://127.0.0.1:8000/api/users/me/',
+          'https://georgebks.pythonanywhere.com/api/users/me/',
           config
         )
         setUserData(userResponse.data)
@@ -279,8 +285,11 @@ const Feed = () => {
       if (currentUserData) {
         try {
           const [feedResponse, allPostsResponse] = await Promise.all([
-            axios.get('http://127.0.0.1:8000/api/posts/feed/', config),
-            axios.get('http://127.0.0.1:8000/api/posts/', config)
+            axios.get(
+              'https://georgebks.pythonanywhere.com/api/posts/feed/',
+              config
+            ),
+            axios.get('https://georgebks.pythonanywhere.com/api/posts/', config)
           ])
 
           const feedPostsFromAPI: Post[] =

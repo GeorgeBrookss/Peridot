@@ -66,7 +66,7 @@ const Profile = () => {
     const auth = getAuth()
     if (!auth) return
 
-    const url = `http://127.0.0.1:8000/api/posts/${postId}/like/`
+    const url = `https://georgebks.pythonanywhere.com/api/posts/${postId}/like/`
 
     try {
       await axios.post(url, {}, auth.config)
@@ -98,7 +98,7 @@ const Profile = () => {
 
     try {
       await axios.delete(
-        `http://127.0.0.1:8000/api/posts/${postId}/`,
+        `https://georgebks.pythonanywhere.com/api/posts/${postId}/`,
         auth.config
       )
       setUserPosts((prevPosts) =>
@@ -124,7 +124,7 @@ const Profile = () => {
 
     try {
       const response = await axios.put<Post>(
-        `http://127.0.0.1:8000/api/posts/${postId}/`,
+        `https://georgebks.pythonanywhere.com/api/posts/${postId}/`,
         { content: editingPostContent },
         auth.config
       )
@@ -175,7 +175,7 @@ const Profile = () => {
 
     try {
       const response = await axios.put<User>(
-        'http://127.0.0.1:8000/api/users/me/',
+        'https://georgebks.pythonanywhere.com/api/users/me/',
         formData,
         config
       )
@@ -253,7 +253,7 @@ const Profile = () => {
     try {
       if (displayUpdateData.display_name) {
         const displayResponse = await axios.put<User>(
-          'http://127.0.0.1:8000/api/users/me/',
+          'https://georgebks.pythonanywhere.com/api/users/me/',
           displayUpdateData,
           auth.config
         )
@@ -262,7 +262,7 @@ const Profile = () => {
 
       if (isPasswordChangeAttempted) {
         await axios.post(
-          'http://127.0.0.1:8000/api/users/change-password/',
+          'https://georgebks.pythonanywhere.com/api/users/change-password/',
           passwordChangeData,
           auth.config
         )
@@ -305,7 +305,7 @@ const Profile = () => {
       return
     }
 
-    const url = `http://127.0.0.1:8000/api/users/${profileId}/follow/`
+    const url = `https://georgebks.pythonanywhere.com/api/users/${profileId}/follow/`
 
     try {
       const response = await axios.post<{
@@ -354,7 +354,7 @@ const Profile = () => {
 
       try {
         const meResponse = await axios.get<User>(
-          'http://127.0.0.1:8000/api/users/me/',
+          'https://georgebks.pythonanywhere.com/api/users/me/',
           config
         )
         loggedUserId = meResponse.data.id
@@ -376,7 +376,7 @@ const Profile = () => {
 
       if (profileToFetchId) {
         try {
-          const profileUrl = `http://127.0.0.1:8000/api/users/${profileToFetchId}/`
+          const profileUrl = `https://georgebks.pythonanywhere.com/api/users/${profileToFetchId}/`
 
           const profileResponse = await axios.get<User>(profileUrl, config)
           setUserData(profileResponse.data)
@@ -396,7 +396,7 @@ const Profile = () => {
       if (profileToFetchId) {
         try {
           const allPostsResponse = await axios.get(
-            'http://127.0.0.1:8000/api/posts/',
+            'https://georgebks.pythonanywhere.com/api/posts/',
             config
           )
 

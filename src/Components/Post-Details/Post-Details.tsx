@@ -110,14 +110,17 @@ const PostDetails = () => {
 
       setIsSearching(true)
       try {
-        const response = await axios.get('http://127.0.0.1:8000/api/search/', {
-          headers: {
-            Authorization: `Bearer ${authToken}`
-          },
-          params: {
-            query: searchQuery
+        const response = await axios.get(
+          'https://georgebks.pythonanywhere.com/api/search/',
+          {
+            headers: {
+              Authorization: `Bearer ${authToken}`
+            },
+            params: {
+              query: searchQuery
+            }
           }
-        })
+        )
         setSearchResults(response.data)
       } catch (err) {
         console.error('Erro ao buscar:', err)
@@ -138,7 +141,7 @@ const PostDetails = () => {
 
     try {
       const postResponse = await axios.get(
-        `http://127.0.0.1:8000/api/posts/${postId}/`,
+        `https://georgebks.pythonanywhere.com/api/posts/${postId}/`,
         config
       )
       setPost(postResponse.data)
@@ -150,7 +153,7 @@ const PostDetails = () => {
       }
 
       const suggestedResponse = await axios.get(
-        'http://127.0.0.1:8000/api/posts/',
+        'https://georgebks.pythonanywhere.com/api/posts/',
         config
       )
       setSuggestedPosts(
@@ -170,7 +173,7 @@ const PostDetails = () => {
 
     try {
       const response = await axios.post<Comment>(
-        `http://127.0.0.1:8000/api/posts/${postId}/comments/`,
+        `https://georgebks.pythonanywhere.com/api/posts/${postId}/comments/`,
         { content: newCommentContent },
         config
       )
@@ -199,7 +202,7 @@ const PostDetails = () => {
       return
     }
 
-    const url = `http://127.0.0.1:8000/api/posts/${postId}/like/`
+    const url = `https://georgebks.pythonanywhere.com/api/posts/${postId}/like/`
 
     try {
       await axios.post(url, {}, config)
@@ -226,7 +229,7 @@ const PostDetails = () => {
 
     try {
       await axios.delete(
-        `http://127.0.0.1:8000/api/posts/${postId}/comments/${commentId}/`,
+        `https://georgebks.pythonanywhere.com/api/posts/${postId}/comments/${commentId}/`,
         config
       )
 
@@ -254,7 +257,7 @@ const PostDetails = () => {
 
     try {
       const response = await axios.put<Comment>(
-        `http://127.0.0.1:8000/api/posts/${postId}/comments/${commentId}/`,
+        `https://georgebks.pythonanywhere.com/api/posts/${postId}/comments/${commentId}/`,
         { content: editingCommentContent },
         config
       )
@@ -281,7 +284,7 @@ const PostDetails = () => {
 
       try {
         const userResponse = await axios.get(
-          'http://127.0.0.1:8000/api/users/me/',
+          'https://georgebks.pythonanywhere.com/api/users/me/',
           config
         )
         setUserData(userResponse.data)
