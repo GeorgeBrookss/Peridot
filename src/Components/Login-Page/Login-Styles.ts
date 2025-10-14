@@ -20,7 +20,7 @@ export const LoginPageSection = styled.div`
   background: linear-gradient(#5ce65cc5, #5ce65c74);
   border-radius: 40px;
   display: flex;
-  width: 70vw;
+  width: 600px;
   h1 {
     margin-top: 6vh;
   }
@@ -28,15 +28,37 @@ export const LoginPageSection = styled.div`
     width: 200px;
     max-height: 200px;
   }
+
+  @media (min-width: 320px) and (max-width: 720px) {
+    max-width: 300px;
+    display: block;
+
+    img {
+      width: 100px;
+      max-height: 100px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin-top: 1px;
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+    }
+  }
 `
 export const FormStyled = styled.div`
-  margin-left: 150px;
   margin-top: 20px;
   display: block;
-  width: 40px;
+  width: 100px;
   color: #2f2f2fff;
   font-size: 20px;
   font-weight: bold;
+  width: 200px;
+
   input {
     margin-bottom: 15px;
     border: 1px solid #000;
@@ -46,11 +68,15 @@ export const FormStyled = styled.div`
     font-size: 12px;
     background: linear-gradient(#ffffff5d, #ffffffff, #ffffffde);
   }
+  @media (min-width: 320px) and (max-width: 720px) {
+    margin: 20px auto;
+  }
 `
 export const FormButtonStyled = styled.div`
   margin-top: 20px;
   display: flex;
-  gap: 12px;
+  padding-right: 40px;
+  gap: 20px;
 
   input {
     border: 1px solid #000;

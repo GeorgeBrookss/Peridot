@@ -23,6 +23,27 @@ export const RegisterPageSection = styled.div`
     width: 200px;
     max-height: 200px;
   }
+
+  @media (min-width: 320px) and (max-width: 1313px) {
+    max-width: 300px;
+    display: block;
+
+    img {
+      width: 100px;
+      max-height: 100px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin-top: 1px;
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+    }
+  }
 `
 export const FormRegisterStyled = styled.div`
   margin-left: 150px;
@@ -45,6 +66,34 @@ export const FormRegisterStyled = styled.div`
     padding: 12px;
     font-size: 12px;
   }
+
+  @media (min-width: 320px) and (max-width: 1313px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 250px;
+    p {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    input {
+      width: 100%;
+      box-sizing: border-box;
+      display: block;
+      margin: 0 auto 15px auto;
+
+      border: 1px solid #000;
+      border-radius: 20px;
+      height: 25px;
+      padding: 12px;
+      font-size: 12px;
+    }
+  }
 `
 export const FormRegisterButtonStyled = styled.div`
   margin-top: 20px;
@@ -62,5 +111,10 @@ export const FormRegisterButtonStyled = styled.div`
       color: #5ce65cf6;
       background-color: #000;
     }
+  }
+  @media (min-width: 320px) and (max-width: 1313px) {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
   }
 `

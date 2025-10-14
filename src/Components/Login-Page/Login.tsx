@@ -76,39 +76,39 @@ const LoginPage = () => {
             <div>
               <h1>Peridot .</h1>
               <h3>Crie e Curta pensamentos diários</h3>
+              <FormStyled>
+                <form onSubmit={handleSubmit}>
+                  <label>
+                    Usuário
+                    <input
+                      type="text"
+                      name="username"
+                      value={username}
+                      onChange={(e) => setUsername(e.target.value)}
+                      required
+                    />
+                  </label>
+                  <label>
+                    Senha
+                    <input
+                      type="password"
+                      name="password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      required
+                    />
+                  </label>
+                  <FormButtonStyled>
+                    <input type="submit" value="Entrar" />
+                    <input
+                      type="button"
+                      value="Cadastrar"
+                      onClick={handleRegisterClick}
+                    />
+                  </FormButtonStyled>
+                </form>
+              </FormStyled>
             </div>
-            <FormStyled>
-              <form onSubmit={handleSubmit}>
-                <label>
-                  Usuário
-                  <input
-                    type="text"
-                    name="username"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                    required
-                  />
-                </label>
-                <label>
-                  Senha
-                  <input
-                    type="password"
-                    name="password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                  />
-                </label>
-                <FormButtonStyled>
-                  <input type="submit" value="Entrar" />
-                  <input
-                    type="button"
-                    value="Cadastrar"
-                    onClick={handleRegisterClick}
-                  />
-                </FormButtonStyled>
-              </form>
-            </FormStyled>
           </LoginPageSection>
         </div>
       </BackgroundStyled>
