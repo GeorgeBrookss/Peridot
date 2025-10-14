@@ -683,6 +683,7 @@ const Profile = () => {
                   )}
 
                   <img
+                    className="ProfilePic"
                     src={userData?.profile_picture || ProfilePlaceholder}
                     alt="Foto de perfil"
                     onClick={handlePictureClick}
@@ -706,6 +707,7 @@ const Profile = () => {
                 </div>
 
                 <div
+                  className="profileButtons"
                   style={{
                     marginTop: '20px',
                     display: 'flex',
@@ -755,7 +757,6 @@ const Profile = () => {
                           : 'linear-gradient(#b7e4b75a,#43ef0435)',
                         borderRadius: '20px',
                         fontWeight: 'bold',
-                        marginLeft: 'auto',
                         transition: 'background 0.3s'
                       }}
                     >

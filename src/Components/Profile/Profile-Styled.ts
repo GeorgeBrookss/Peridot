@@ -16,6 +16,12 @@ export const BackgroundFeed = styled.div`
   background-size: cover;
   background-repeat: repeat-y;
   padding-top: 20px;
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    h1 {
+      margin-left: 2vh;
+    }
+  }
 `
 
 export const FeedCamp = styled.div`
@@ -33,6 +39,25 @@ export const FeedCamp = styled.div`
     text-align: center;
     max-height: fit-content;
   }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    max-width: 500px;
+    width: 300px;
+    .ProfilePic {
+      max-width: 100px;
+      max-height: 100px;
+    }
+    .profileButtons {
+      flex-direction: column;
+    }
+    .postAuthorProfile {
+      display: inline-flex;
+      gap: 12px;
+      margin-bottom: 20px;
+      align-items: center;
+      max-width: 300px;
+    }
+  }
 `
 
 export const PostContent = styled.div`
@@ -47,4 +72,9 @@ export const PostContent = styled.div`
   background: linear-gradient(#f0ffe1d0, #f0ffe197);
   margin: 20px;
   font-family: Arial, Helvetica, sans-serif;
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    max-width: 500px;
+    width: 250px;
+  }
 `
