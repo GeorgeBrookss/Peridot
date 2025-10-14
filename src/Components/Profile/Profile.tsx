@@ -653,7 +653,22 @@ const Profile = () => {
           <img src={Logo} alt="Logo" style={{ maxWidth: '20px' }} />
           Peridot .
         </h1>
-
+        <button
+          onClick={() => navigate('/feed')}
+          type="button"
+          style={{
+            color: '#ffffff',
+            marginBottom: '20px',
+            marginLeft: '30px',
+            background: 'linear-gradient(#0a4500, #77ff7aa5)',
+            borderRadius: '20px',
+            padding: '5px',
+            border: '1px solid #0000',
+            cursor: 'pointer'
+          }}
+        >
+          Voltar
+        </button>
         <Styled.FeedCamp style={{ maxWidth: '800px', margin: '0 20px' }}>
           <div
             style={{
@@ -670,7 +685,8 @@ const Profile = () => {
             ) : (
               <>
                 <div
-                  style={{ display: 'flex', alignItems: 'center', gap: '40px' }}
+                  className="profileCamp"
+                  style={{ display: 'flex', alignItems: 'center', gap: '20px' }}
                 >
                   {isMyProfile && (
                     <input
@@ -698,7 +714,9 @@ const Profile = () => {
                   />
 
                   <div>
-                    <h2>{userData?.display_name || 'Usuário'}</h2>
+                    <h2 className="profileName">
+                      {userData?.display_name || 'Usuário'}
+                    </h2>
 
                     <h3 style={{ opacity: 0.7 }}>
                       @{userData?.username || 'Carregando...'}
@@ -885,22 +903,6 @@ const Profile = () => {
               </>
             )}
           </div>
-
-          <button
-            onClick={() => navigate('/feed')}
-            type="button"
-            style={{
-              color: '#ffffff',
-              marginRight: '10px',
-              background: 'linear-gradient(#0a4500, #77ff7aa5)',
-              borderRadius: '20px',
-              padding: '5px',
-              border: '1px solid #0000',
-              cursor: 'pointer'
-            }}
-          >
-            Voltar
-          </button>
 
           <h2
             style={{

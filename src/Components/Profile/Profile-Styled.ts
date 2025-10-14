@@ -43,6 +43,18 @@ export const FeedCamp = styled.div`
   @media (min-width: 320px) and (max-width: 767px) {
     max-width: 500px;
     width: 300px;
+
+    .profileCamp {
+      .profileName {
+        font-size: 20px;
+        max-width: 250px;
+      }
+      h3 {
+        color: #8dff02ee;
+        max-width: 250px;
+        font-size: 15px;
+      }
+    }
     .ProfilePic {
       max-width: 100px;
       max-height: 100px;
