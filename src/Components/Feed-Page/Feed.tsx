@@ -474,7 +474,7 @@ const Feed = () => {
                         onClick={() => navigate('/users/me')}
                         className="DisplayName"
                       >
-                        @{userData?.username || 'Carregando...'}
+                        @{post.author.username || 'Carregando...'}
                       </h5>
                     </Styled.AuthorUsername>
                   </Styled.PostAuthorProfile>
