@@ -8,6 +8,8 @@ import React, { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
 import { useNavigate, useParams } from 'react-router-dom'
 
+const BASE_URL = 'https://georgebks.pythonanywhere.com'
+
 const Profile = () => {
   interface User {
     id: number
@@ -815,7 +817,7 @@ const Profile = () => {
                               }}
                               onClick={() => {
                                 setShowListModal(false)
-                                navigate(`/profile/${user.id}`)
+                                navigate(`/users/${user.id}`)
                               }}
                             >
                               <div
@@ -827,7 +829,9 @@ const Profile = () => {
                               >
                                 <img
                                   src={
-                                    user.profile_picture || ProfilePlaceholder
+                                    user.profile_picture
+                                      ? BASE_URL + user.profile_picture
+                                      : ProfilePlaceholder
                                   }
                                   alt={`Foto de ${user.username}`}
                                   style={{
