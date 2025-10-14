@@ -29,6 +29,14 @@ const Profile = () => {
     image: string | null
   }
 
+  interface FollowUser {
+    id: number
+    username: string
+    display_name: string
+    profile_picture: string | null
+    is_following: boolean
+  }
+
   const [userData, setUserData] = useState<User | null>(null)
   const [userPosts, setUserPosts] = useState<Post[]>([])
   const [error, setError] = useState('')
@@ -36,6 +44,12 @@ const Profile = () => {
   const [editingPostContent, setEditingPostContent] = useState<string>('')
   const fileInputRef = useRef<HTMLInputElement>(null)
   const [isEditingProfile, setIsEditingProfile] = useState(false)
+  const [showListModal, setShowListModal] = useState(false)
+  const [listType, setListType] = useState<'followers' | 'following' | null>(
+    null
+  )
+  const [listUsers, setListUsers] = useState<FollowUser[]>([])
+  const [listLoading, setListLoading] = useState(false)
   const [profileFormData, setProfileFormData] = useState({
     display_name: '',
     old_password: '',
@@ -323,6 +337,34 @@ const Profile = () => {
     } catch (err) {
       console.error('Erro ao alternar Seguir/Deixar de Seguir:', err)
       setError('Erro ao processar a ação. Tente novamente.')
+    }
+  }
+  const fetchFollowList = async (
+    type: 'followers' | 'following',
+    userId: number
+  ) => {
+    setListLoading(true)
+    setListUsers([])
+    setError('')
+
+    const auth = getAuth()
+    if (!auth) {
+      setListLoading(false)
+      return
+    }
+
+    const url = `https://georgebks.pythonanywhere.com/api/users/${userId}/${type}/`
+
+    try {
+      const response = await axios.get<FollowUser[]>(url, auth.config)
+      setListUsers(response.data)
+      setListType(type)
+      setShowListModal(true)
+    } catch (err) {
+      console.error(`Erro ao buscar ${type}:`, err)
+      setError(`Erro ao carregar lista de ${type}.`)
+    } finally {
+      setListLoading(false)
     }
   }
 
@@ -671,12 +713,22 @@ const Profile = () => {
                     fontWeight: 'bold'
                   }}
                 >
-                  <p>
+                  <p
+                    onClick={() =>
+                      userData && fetchFollowList('followers', userData.id)
+                    }
+                    style={{ cursor: userData ? 'pointer' : 'default' }}
+                  >
                     Seguidores:
                     <strong>{userData?.followers_count ?? 0}</strong>
                   </p>
 
-                  <p>
+                  <p
+                    onClick={() =>
+                      userData && fetchFollowList('following', userData.id)
+                    }
+                    style={{ cursor: userData ? 'pointer' : 'default' }}
+                  >
                     Seguindo: <strong>{userData?.following_count ?? 0}</strong>
                   </p>
 
@@ -711,6 +763,118 @@ const Profile = () => {
                         ? 'Deixar de Seguir'
                         : 'Seguir'}
                     </button>
+                  )}
+                  {showListModal && (
+                    <div
+                      style={{
+                        position: 'fixed',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        background: 'rgba(0, 0, 0, 0.8)',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        zIndex: 1000
+                      }}
+                    >
+                      <div
+                        style={{
+                          background: '#1c1c1c',
+                          padding: '20px',
+                          borderRadius: '15px',
+                          width: '400px',
+                          maxHeight: '80vh',
+                          overflowY: 'auto',
+                          boxShadow: '0 0 20px #48ff3b',
+                          color: 'white'
+                        }}
+                      >
+                        <h3 style={{ marginBottom: '20px', color: '#48ff3b' }}>
+                          {listType === 'followers' ? 'Seguidores' : 'Seguindo'}{' '}
+                          de {userData?.display_name || 'Usuário'}
+                        </h3>
+
+                        {listLoading ? (
+                          <p style={{ textAlign: 'center' }}>
+                            Carregando lista...
+                          </p>
+                        ) : listUsers.length > 0 ? (
+                          listUsers.map((user) => (
+                            <div
+                              key={user.id}
+                              style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'space-between',
+                                marginBottom: '10px',
+                                padding: '10px',
+                                borderBottom: '1px solid #333',
+                                cursor: 'pointer'
+                              }}
+                              onClick={() => {
+                                setShowListModal(false)
+                                navigate(`/profile/${user.id}`)
+                              }}
+                            >
+                              <div
+                                style={{
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: '10px'
+                                }}
+                              >
+                                <img
+                                  src={
+                                    user.profile_picture || ProfilePlaceholder
+                                  }
+                                  alt={`Foto de ${user.username}`}
+                                  style={{
+                                    width: '40px',
+                                    height: '40px',
+                                    borderRadius: '50%',
+                                    objectFit: 'cover'
+                                  }}
+                                />
+                                <div>
+                                  <p style={{ fontWeight: 'bold' }}>
+                                    {user.display_name}
+                                  </p>
+                                  <small style={{ opacity: 0.7 }}>
+                                    @{user.username}
+                                  </small>
+                                </div>
+                              </div>
+                            </div>
+                          ))
+                        ) : (
+                          <p style={{ textAlign: 'center' }}>
+                            {listType === 'followers'
+                              ? 'Ninguém segue este usuário.'
+                              : 'Este usuário não segue ninguém.'}
+                          </p>
+                        )}
+
+                        <button
+                          onClick={() => setShowListModal(false)}
+                          style={{
+                            padding: '10px 20px',
+                            background: '#555',
+                            color: 'white',
+                            border: 'none',
+                            borderRadius: '20px',
+                            cursor: 'pointer',
+                            fontWeight: 'bold',
+                            marginTop: '20px',
+                            display: 'block',
+                            width: '100%'
+                          }}
+                        >
+                          Fechar
+                        </button>
+                      </div>
+                    </div>
                   )}
                 </div>
               </>
