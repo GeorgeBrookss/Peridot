@@ -115,4 +115,5 @@ A aplicação está no ar e pode ser acessada através dos seguintes links:
 * **Clicando no Input de pesquisa, é possivel procurar por usuários e posts, ao clicar em um usuário é redirecionado para o perfil do mesmo**
 * a pesquisa ativa a partir do segundo caractere automaticamente, os resultados são listados permitindo scroll
   
-![Feed inicial](assets/Pesquisa-Usuarios.png)
+![Feed inicial](assets/Pesquisa-Usuarios.png) ![Feed inicial](assets/Pesquisa-Postagem.png)
+
