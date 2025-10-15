@@ -148,3 +148,12 @@ A aplicação está no ar e pode ser acessada através dos seguintes links:
 
 * Lista de seguindo:
 ![Feed inicial](assets/Lista-Seguindo.png)
+
+* o perfil de cada usuário contém um feed com todos os posts feitos por ele:
+* é possivel interagir com os posts de dentro do pefil do usuário e no feed
+
+* as formas de interagir são dando like:
+![Feed inicial](assets/Like.png)
+
+* e comentando:
+![Feed inicial](assets/Like.png)
