@@ -128,10 +128,11 @@ export const PostArea = styled.div`
     .postarea {
       .blocl {
         display: flex;
-        max-width: 20px;
+        max-width: 300px;
+        background-color: red;
 
         button {
-          margin-right: 120px;
+          margin: 0 auto;
         }
       }
     }
@@ -384,12 +385,12 @@ export const PostContent = styled.div`
   font-family: Arial, Helvetica, sans-serif;
 
   a {
-    color: #007bff; /* Cor azul clássica para links */
+    color: #007bff;
     text-decoration: underline;
     cursor: pointer;
 
     &:hover {
-      color: #0056b3; /* Um azul mais escuro ao passar o mouse */
+      color: #0056b3;
     }
   }
   @media (min-width: 320px) and (max-width: 1424px) {
@@ -566,6 +567,7 @@ export const UserInfo = styled.div`
 
 export const UserDisplayName = styled.strong`
   display: block;
+  width: fit-content;
 `
 
 export const UserNameSearch = styled.small`
@@ -746,6 +748,7 @@ export const UserInfoMobile = styled.div`
 `
 export const UserDisplayNameMobile = styled.strong`
   display: block;
+  background-color: red;
 `
 
 export const UserNameSearchMobile = styled.small`
