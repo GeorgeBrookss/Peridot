@@ -178,6 +178,11 @@ Siga os passos abaixo para explorar a rede social Peridot:
 
 * **O perfil de cada usuário contém um feed com todos os posts feitos por ele. É possível interagir com os posts (curtir e comentar) de dentro do perfil.**
 
+
+*Após seguir um usuário as postagens do mesmo aparecer no seu feed.
+
+![Lista de quem está Seguindo](assets/Tela-Feed-Atualizada.png)
+
 <br>
 
 ### 6. Editando Seu Próprio Perfil
