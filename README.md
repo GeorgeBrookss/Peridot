@@ -58,7 +58,7 @@ O projeto foi construído com as seguintes tecnologias e ferramentas:
 
 ### Back-end
 * **Framework:** Django e Django Rest Framework (DRF)
-* **Banco de Dados:** MySQL
+* **Banco de Dados:** SQLite
 
 <br>
 
