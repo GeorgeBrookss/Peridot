@@ -90,10 +90,15 @@ Siga os passos abaixo para explorar a rede social Peridot:
 <br>
   
 * **Com o login realizado, você será redirecionado para o seu feed inicial.**
-  
+
+
+  
 ![Feed inicial](assets/Tela-Feed-Inicial.png)
 
 * **Como sua conta é nova e não segue nenhum usuário, os únicos posts disponíveis são os de sugestão (últimos posts enviados por usuários diversos).**
+
+
+
   
 ![Feed inicial](assets/Sugestao.png)
 
