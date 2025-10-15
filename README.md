@@ -1,74 +1,72 @@
-# Boilerplate React com TypeScript, Styled Components & ESLint
+# Peridot
+*A nova rede social para compartilhar seus gostos*
+
+<br>
 
 ## Descrição do Projeto
 
+**Peridot** é uma rede social completa, desenvolvida com uma API back-end em **Django Rest Framework (DRF)** e um front-end moderno construído com **React** e **Styled-Components**.
 
-### Este projeto é um boilerplate moderno para aplicações React, desenvolvido com foco em produtividade e boas práticas. A proposta é fornecer uma base sólida para iniciar novos projetos sem precisar configurar do zero ferramentas essenciais do ecossistema React. Com este boilerplate, você já terá:
+O projeto nasceu com o objetivo acadêmico de ser um clone simplificado do Twitter, mas evoluiu com a adição de funcionalidades extras para aprimorar a experiência do usuário. Hoje, a Peridot é uma plataforma funcional onde diversos usuários já interagem entre si.
 
-Configuração inicial pronta para React com TypeScript.
+<br>
 
-Estilização com Styled Components.
+## Funcionalidades
 
-Padrões de qualidade e linting configurados com ESLint e Prettier.
+A plataforma oferece uma experiência completa de rede social, incluindo:
 
-Estrutura de pastas organizada para facilitar o desenvolvimento.
+### Autenticação e Contas
+* Sistema seguro de cadastro e login de usuários.
 
-### Objetivo do Projeto
+### Gerenciamento de Perfil
+* Customização de foto de perfil (incluindo GIFs), nome e senha.
+* Visualização da lista de postagens feitas pelo usuário em seu próprio perfil.
 
-Fornecer um ponto de partida confiável para desenvolvedores que desejam iniciar aplicações modernas em React, eliminando o tempo gasto com configurações repetitivas.
+### Feed e Socialização
+* Sistema para seguir e deixar de seguir outros usuários.
+* Visualização da lista de seguidores e de quem o usuário segue.
+* Feed de notícias cronológico que exibe apenas as postagens dos usuários seguidos.
 
-### Tecnologias Utilizadas
+### Postagens e Interações
+* Criação de postagens com texto, imagens e GIFs.
+* Possibilidade de curtir e comentar nas publicações de outros usuários.
 
-Linguagem: TypeScript
+### Busca e Descoberta
+* Ferramenta de pesquisa para encontrar usuários e postagens específicas.
 
-Biblioteca Frontend: React
+### Design Responsivo
+* Interface totalmente adaptável para uma experiência consistente em desktops, tablets e celulares.
 
-Estilização: Styled Components
+<br>
 
-Linting e Formatação: ESLint + Prettier
+## Objetivo do Projeto
 
-Gerenciador de Pacotes: npm (pode ser usado yarn também)
+O desenvolvimento deste projeto teve como finalidade principal aplicar e consolidar os conhecimentos adquiridos durante minha jornada no curso **Desenvolvedor Fullstack Python** da EBAC.
 
-### Instalação e Configuração
+<br>
 
-Clone o repositório
+## Tecnologias Utilizadas
 
-`git clone https://github.com/GeorgeBrookss/Boilerplate-Front-end`
+O projeto foi construído com as seguintes tecnologias e ferramentas:
 
-Acesse a pasta do projeto
-`cd Boilerplate-Front-end`
+### Front-end
+* **Linguagem:** TypeScript
+* **Biblioteca:** React
+* **Estilização:** Styled Components
+* **Qualidade de Código:** ESLint e Prettier para padronização e linting.
+* **Gerenciador de Pacotes:** npm
 
-Instale as dependências
-````
-npm install
-# ou
-yarn install
-````
-Build para produção
-````
-npm run build
-# ou
-yarn build
+### Back-end
+* **Framework:** Django e Django Rest Framework (DRF)
+* **Banco de Dados:** MySQL
 
-````
+<br>
 
-**Outros arquivos importantes:**
+## Deploy
 
-.eslintrc.json → Configuração do ESLint
+A aplicação está no ar e pode ser acessada através dos seguintes links:
 
-.prettierrc → Configuração do Prettier
+* **Front-end (Vercel):**  [https://peridot-smoky.vercel.app/]
+* **Back-end (PythonAnywhere):** [https://georgebks.pythonanywhere.com/api/]
 
-tsconfig.json → Configuração do TypeScript
-
-### Como Usar
-
-Após instalar as dependências, já é possível começar a criar seus componentes dentro da pasta src/.
-
-Utilize Styled Components para criar estilos com facilidade.
-
-O ESLint e o Prettier estão prontos para manter o código padronizado e limpo.
-
-### Conclusão
-
-Este boilerplate foi criado para agilizar o início de projetos React e garantir boas práticas desde a primeira linha de código.
-Com ele, você pode se concentrar no desenvolvimento da aplicação, sem perder tempo configurando o ambiente.
+<br>
