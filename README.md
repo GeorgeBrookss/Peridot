@@ -79,3 +79,10 @@ A aplicação está no ar e pode ser acessada através dos seguintes links:
 * **Clique em 'Cadastrar' e será redirecionado para a página de cadastro. Preencha os dados seguindo o formulário corretamente:**
 ![Página de cadastro](assets/Tela-Cadastro.png)
 
+* **Após realizar o cadastro com sucesso, será redirecionado para a página de login novamente (caso não consiga realizar o login atualize a página).**
+  <br>
+* **Com o login realizado, irá ser redirecionado para o seu feed inicial. Como sua conta é nova e não segue nenhum usuário, os unicos posts disponiveis são os de sugestão (últimos posts enviados por usuários diversos)**
+* você pode utilizar o campo de pesquisa para ver se tem algum usuário ou post de seu interesse para seguir ou interagir.
+![Feed inicial](assets/Tela-Feed-Inicial.png)
+
+
