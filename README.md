@@ -87,6 +87,8 @@ A aplicação está no ar e pode ser acessada através dos seguintes links:
 ![Feed inicial](assets/Tela-Feed-Inicial.png)
 
 * **Como sua conta é nova e não segue nenhum usuário, os unicos posts disponiveis são os de sugestão (últimos posts enviados por usuários diversos).**
+
+  
 ![Feed inicial](assets/Sugestao.png)
 
   <br>
