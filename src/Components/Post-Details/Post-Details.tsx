@@ -537,7 +537,8 @@ const PostDetails = () => {
                       display: 'flex',
                       alignItems: 'center',
                       marginBottom: '5px',
-                      cursor: 'pointer'
+                      cursor: 'pointer',
+                      width: 'fit-content'
                     }}
                   >
                     <img
@@ -559,38 +560,44 @@ const PostDetails = () => {
                         @{comment.author.username}
                       </h4>
                     </div>
-
-                    {userData?.id === comment.author.id && (
-                      <div style={{ marginLeft: 'auto', display: 'flex' }}>
-                        <button
-                          type="button"
-                          onClick={() => {
-                            setEditingCommentId(comment.id)
-                            setEditingCommentContent(comment.content)
-                          }}
-                          style={{
-                            all: 'unset',
-                            cursor: 'pointer',
-                            marginRight: '20px',
-                            color: '#00cc00'
-                          }}
-                        >
-                          Editar
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => HandleDeleteComment(comment.id)}
-                          style={{
-                            all: 'unset',
-                            cursor: 'pointer',
-                            color: 'red'
-                          }}
-                        >
-                          Excluir
-                        </button>
-                      </div>
-                    )}
                   </div>
+                  {userData?.id === comment.author.id && (
+                    <div
+                      style={{
+                        marginLeft: 'auto',
+                        display: 'flex',
+                        gap: '20px'
+                      }}
+                    >
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setEditingCommentId(comment.id)
+                          setEditingCommentContent(comment.content)
+                        }}
+                        style={{
+                          all: 'unset',
+                          cursor: 'pointer',
+                          marginLeft: '80%',
+                          color: '#00cc00',
+                          zIndex: '999999'
+                        }}
+                      >
+                        Editar
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => HandleDeleteComment(comment.id)}
+                        style={{
+                          all: 'unset',
+                          cursor: 'pointer',
+                          color: 'red'
+                        }}
+                      >
+                        Excluir
+                      </button>
+                    </div>
+                  )}
 
                   {editingCommentId === comment.id ? (
                     <div style={{ paddingLeft: '40px' }}>

@@ -382,6 +382,16 @@ export const PostContent = styled.div`
   background: linear-gradient(#f0ffe1d0, #f0ffe197);
   margin: 20px;
   font-family: Arial, Helvetica, sans-serif;
+
+  a {
+    color: #007bff; /* Cor azul clássica para links */
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      color: #0056b3; /* Um azul mais escuro ao passar o mouse */
+    }
+  }
   @media (min-width: 320px) and (max-width: 1424px) {
     width: 90%;
   }
