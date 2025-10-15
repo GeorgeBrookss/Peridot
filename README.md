@@ -131,13 +131,11 @@ Siga os passos abaixo para explorar a rede social Peridot:
 
 * **As formas de interagir com os posts (tanto no feed principal quanto nos perfis) são:**
   
-    * Dando 'Like':
+* Dando 'Like':    
+![Botão de Like](assets/Like.png)
     
-    ![Botão de Like](assets/Like.png)
-    
-    * E comentando:
-    
-    ![Espaço para Comentário](assets/Espaco-Comentario.png)
+* E comentando:    
+![Espaço para Comentário](assets/Espaco-Comentario.png)
 
 * **Você também pode ver os detalhes da postagem, incluindo a seção de comentários.**
 
