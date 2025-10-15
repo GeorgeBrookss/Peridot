@@ -74,9 +74,11 @@ A aplicação está no ar e pode ser acessada através dos seguintes links:
 
 ## Tutorial
 * **Ao entrar no site essa vai ser a primeira página que irá visualizar:**
+  
 ![Tela inicial](assets/Tela-inicial.png)
 
 * **Clique em 'Cadastrar' e será redirecionado para a página de cadastro. Preencha os dados seguindo o formulário corretamente:**
+  
 ![Página de cadastro](assets/Tela-Cadastro.png)
 
 * **Após realizar o cadastro com sucesso, será redirecionado para a página de login novamente (caso não consiga realizar o login atualize a página atual e tente logar novamente).**
@@ -84,6 +86,7 @@ A aplicação está no ar e pode ser acessada através dos seguintes links:
   <br>
   
 * **Com o login realizado, irá ser redirecionado para o seu feed inicial.**
+  
 ![Feed inicial](assets/Tela-Feed-Inicial.png)
 
 * **Como sua conta é nova e não segue nenhum usuário, os unicos posts disponiveis são os de sugestão (últimos posts enviados por usuários diversos).**
@@ -94,7 +97,21 @@ A aplicação está no ar e pode ser acessada através dos seguintes links:
   <br>
 
 * **Clicando no input central ao topo da tela você pode digitar seus Posts:**
+  
 ![Feed inicial](assets/Digitando-Postagem.png)
 
 * **Caso deseje, é possivel atribuir uma imagem ou gif na sua postagem:**
+  
+![Feed inicial](assets/Adicionando-Imagem.png)
+
+
+* **Clicando em "Postar" você realiza sua postagem, irá aparecer em tempo real no seu feed**
+* (ao atualizar sua página é possivel ver sua postagem nas novidades sugeridas, onde aparece para todos os usuários, incluindo os que não te seguem)
+  
+  
+![Feed inicial](assets/Postando.png)
+
+
+* **Clicando em "Postar" você realiza sua postagem, irá aparecer em tempo real no seu feed**
+  
 ![Feed inicial](assets/Adicionando-Imagem.png)
