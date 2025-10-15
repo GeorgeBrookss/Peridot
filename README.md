@@ -156,4 +156,32 @@ A aplicação está no ar e pode ser acessada através dos seguintes links:
 ![Feed inicial](assets/Like.png)
 
 * e comentando:
-![Feed inicial](assets/Like.png)
+![Feed inicial](assets/Espaco-Comentario.png)
+
+
+* **O Peridot permite que você veja e edite o seu perfil desde o nome de exibição até senha**
+** no lugar de 'seguir'/'deixar de seguir', quando é o seu próprio perfil irá aparecer a opção 'Editar Perfil' no mesmo local
+  
+* editando nome de perfil:
+![Feed inicial](assets/Editar-Perfil.png)
+
+* nome editado:
+![Feed inicial](assets/![Feed inicial](assets/Editar-Perfil.png)
+
+*(Após edição, quando atualizar sua página verá que seu nome já está editado em todos os campos disponiveis no site)
+
+
+* ** Editando foto de perfil **
+  
+* lembrando que sua imagem de perfil pode ser um gif para ficar mais estilizado!
+
+* para mudar a imagem de perfil clique na foto atual que abrirá o seletor de imagens do seu dispositivo.
+
+*seja criativo e deixe com um estilo que você goste!
+
+*antes de mudar a foto de perfil (placeholder):
+![Feed inicial](assets/Perfil-Usuario.png)
+
+*após edição:
+
+![Feed inicial](assets/Perfil-Usuario-Atualizado.png)
