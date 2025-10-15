@@ -66,129 +66,132 @@ O projeto foi construído com as seguintes tecnologias e ferramentas:
 
 A aplicação está no ar e pode ser acessada através dos seguintes links:
 
-* **Front-end (Vercel):**  [https://peridot-smoky.vercel.app/]
-* **Back-end (PythonAnywhere):** [https://georgebks.pythonanywhere.com/api/]
+* **Front-end (Vercel):** https://peridot-smoky.vercel.app/
+* **Back-end (PythonAnywhere):** https://georgebks.pythonanywhere.com/api/
 
 <br>
 
+## Guia de Uso (Tutorial)
 
-## Tutorial
-* **Ao entrar no site essa vai ser a primeira página que irá visualizar:**
-  
+Siga os passos abaixo para explorar a rede social Peridot:
+
+### 1. Cadastro e Login
+
+* **Ao entrar no site, essa será a primeira página que você irá visualizar:**
+  
 ![Tela inicial](assets/Tela-inicial.png)
 
-* **Clique em 'Cadastrar' e será redirecionado para a página de cadastro. Preencha os dados seguindo o formulário corretamente:**
-  
+* **Clique em 'Cadastrar' e será redirecionado para a página de cadastro. Preencha os dados no formulário corretamente:**
+  
 ![Página de cadastro](assets/Tela-Cadastro.png)
 
-* **Após realizar o cadastro com sucesso, será redirecionado para a página de login novamente (caso não consiga realizar o login atualize a página atual e tente logar novamente).**
+* **Após realizar o cadastro com sucesso, você será redirecionado para a página de login novamente (caso não consiga fazer o login, atualize a página e tente novamente).**
 
-  <br>
-  
-* **Com o login realizado, irá ser redirecionado para o seu feed inicial.**
-  
+<br>
+  
+* **Com o login realizado, você será redirecionado para o seu feed inicial.**
+  
 ![Feed inicial](assets/Tela-Feed-Inicial.png)
 
-* **Como sua conta é nova e não segue nenhum usuário, os unicos posts disponiveis são os de sugestão (últimos posts enviados por usuários diversos).**
-
-  
+* **Como sua conta é nova e não segue nenhum usuário, os únicos posts disponíveis são os de sugestão (últimos posts enviados por usuários diversos).**
+  
 ![Feed inicial](assets/Sugestao.png)
 
-  <br>
+<br>
 
-* **Clicando no input central ao topo da tela você pode digitar seus Posts:**
-  
-![Feed inicial](assets/Digitando-Postagem.png)
+### 2. Criação e Edição de Postagens
 
-* **Caso deseje, é possivel atribuir uma imagem ou gif na sua postagem:**
-  
-![Feed inicial](assets/Adicionando-Imagem.png)
+* **Clicando no campo de texto central, no topo da tela, você pode digitar seu post:**
+  
+![Digitando um novo Post](assets/Digitando-Postagem.png)
 
+* **Caso deseje, é possível anexar uma imagem ou GIF à sua postagem:**
+  
+![Adicionando imagem ao Post](assets/Adicionando-Imagem.png)
 
-* **Clicando em "Postar" você realiza sua postagem, irá aparecer em tempo real no seu feed**
-* (ao atualizar sua página é possivel ver sua postagem nas novidades sugeridas, onde aparece para todos os usuários, incluindo os que não te seguem)
-  
-  
-![Feed inicial](assets/Postando.png)
+* **Clicando em "Postar", você realiza sua postagem. Ela aparecerá em tempo real no seu feed.**
+* (Ao atualizar sua página, é possível ver sua postagem nas novidades sugeridas, onde aparece para todos os usuários, incluindo aqueles que não te seguem.)
+  
+![Postagem enviada](assets/Postando.png)
 
+* **Você pode editar ou excluir suas próprias postagens. Clique no botão 'Editar' (verde) para modificar o texto.**
+* (Não é possível editar a imagem da postagem. Caso queira remover a postagem, clique no botão 'Excluir' (vermelho) para apagá-la.)
 
-* **Clicando no Input de pesquisa, é possivel procurar por usuários e posts, ao clicar em um usuário é redirecionado para o perfil do mesmo**
-* a pesquisa ativa a partir do segundo caractere automaticamente, os resultados são listados permitindo scroll.
+*Postagem durante a edição:*
+![Postagem em edição](assets/Durante-Edicao.png)
 
-  
-* Resultado de usuários:
-  
-![Feed inicial](assets/Pesquisa-Usuarios.png)
+* Quando estiver satisfeito com a edição, clique em **Salvar Edição**. Se quiser cancelar a ação, clique em **Cancelar**.
+<br>
+
+### 3. Interagindo com Posts
+
+* **As formas de interagir com os posts (tanto no feed principal quanto nos perfis) são:**
+    * Dando 'Like':
+    ![Botão de Like](assets/Like.png)
+    * E comentando:
+    ![Espaço para Comentário](assets/Espaco-Comentario.png)
+
+* **Você também pode ver os detalhes da postagem, incluindo a seção de comentários.**
 
 <br>
+
+### 4. Busca e Descoberta de Usuários
+
+* **Clicando no campo de pesquisa, é possível procurar por usuários e posts. A pesquisa é ativada automaticamente a partir do segundo caractere, e os resultados são listados, permitindo scroll.**
+* Ao clicar em um usuário, você é redirecionado para o perfil dele.
+
+* Resultado de usuários:
+  
+![Pesquisa por Usuários](assets/Pesquisa-Usuarios.png)
+
 * Resultado de postagens:
 
-![Feed inicial](assets/Pesquisa-Postagem.png)
-
-
-* Você pode clicar no botão 'Editar' em verde para editar o texto da sua postagem
-* (não é possivel editar a imagem da postagem, caso queira remover clique no botão 'Excluir' em vermelho para apagar a postagem)
-
-*Postagem durante edição:
-![Feed inicial](assets/Durante-Edicao.png)
-* quando estiver satisfeito com a edição. clique em Salvar Edição, se quiser cancelar a ação clique em Cancelar.
-<br>
-
-* **Ao entrar no perfil de um usuário, você verá a opção de segui-lo (ou deixar de seguir caso já esteja seguindo):**
-
-
-* normal:
-![Feed inicial](assets/Perfil-de-Terceiros.png)
-
-
-* seguindo:
-![Feed inicial](assets/Seguindo.png)
-
+![Pesquisa por Postagens](assets/Pesquisa-Postagem.png)
 
 <br>
 
-* **É possivel ver a lista de seguidores e seguindo no perfil do usuário:**
-* Também é possivel entrar no perfil dos usuários listados 
+### 5. Perfis de Terceiros e Acompanhamento
+
+* **Ao entrar no perfil de outro usuário, você verá a opção de segui-lo (ou deixar de seguir, caso já esteja acompanhando):**
+
+* Perfil de terceiro (opção Seguir):
+![Perfil de Terceiros](assets/Perfil-de-Terceiros.png)
+
+* Perfil de terceiro (opção Deixar de Seguir):
+![Perfil com usuário já Seguido](assets/Seguindo.png)
+
+* **É possível ver a lista de seguidores e de quem o usuário está seguindo no perfil dele. Também é possível entrar no perfil dos usuários listados.**
 
 * Lista de seguidores:
-![Feed inicial](assets/Lista-Seguidores.png)
+![Lista de Seguidores](assets/Lista-Seguidores.png)
 
-* Lista de seguindo:
-![Feed inicial](assets/Lista-Seguindo.png)
+* Lista de 'Seguindo':
+![Lista de quem está Seguindo](assets/Lista-Seguindo.png)
 
-* o perfil de cada usuário contém um feed com todos os posts feitos por ele:
-* é possivel interagir com os posts de dentro do pefil do usuário e no feed
+* **O perfil de cada usuário contém um feed com todos os posts feitos por ele. É possível interagir com os posts (curtir e comentar) de dentro do perfil.**
 
-* as formas de interagir são dando like:
-![Feed inicial](assets/Like.png)
+<br>
 
-* e comentando:
-![Feed inicial](assets/Espaco-Comentario.png)
+### 6. Editando Seu Próprio Perfil
 
+* **O Peridot permite que você veja e edite o seu perfil, alterando desde o nome de exibição até a senha.**
+* No lugar de 'Seguir'/'Deixar de Seguir', quando é o seu próprio perfil, irá aparecer a opção **'Editar Perfil'** no mesmo local.
+  
+* Editando nome de perfil:
+![Tela de Edição de Perfil](assets/Editar-Perfil.png)
 
-* **O Peridot permite que você veja e edite o seu perfil desde o nome de exibição até senha**
-** no lugar de 'seguir'/'deixar de seguir', quando é o seu próprio perfil irá aparecer a opção 'Editar Perfil' no mesmo local
-  
-* editando nome de perfil:
-![Feed inicial](assets/Editar-Perfil.png)
+* Nome editado:
+![Nome de Perfil Editado](assets/Nome-Editado.png)
 
-* nome editado:
-![Feed inicial](assets/Nome-Editado.png)
+*(Após a edição, ao atualizar sua página, você verá que seu nome já estará atualizado em todos os campos disponíveis no site.)*
 
-*(Após edição, quando atualizar sua página verá que seu nome já está editado em todos os campos disponiveis no site)
+* **Editando Foto de Perfil**
+* Lembre-se: sua imagem de perfil pode ser um GIF para ficar mais estilizada!
+* Para mudar a imagem de perfil, clique na foto atual. Isso abrirá o seletor de imagens do seu dispositivo.
+* Seja criativo e use um estilo que você goste!
 
+* Antes de mudar a foto de perfil (placeholder):
+![Foto de Perfil Padrão](assets/Perfil-Usuario.png)
 
-* ** Editando foto de perfil **
-  
-* lembrando que sua imagem de perfil pode ser um gif para ficar mais estilizado!
-
-* para mudar a imagem de perfil clique na foto atual que abrirá o seletor de imagens do seu dispositivo.
-
-*seja criativo e deixe com um estilo que você goste!
-
-*antes de mudar a foto de perfil (placeholder):
-![Feed inicial](assets/Perfil-Usuario.png)
-
-*após edição:
-
-![Feed inicial](assets/Perfil-Usuario-Atualizado.png)
+* Após a edição:
+![Foto de Perfil Atualizada](assets/Perfil-Usuario-Atualizado.png)
