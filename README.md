@@ -90,6 +90,7 @@ Siga os passos abaixo para explorar a rede social Peridot:
 * **Após realizar o cadastro com sucesso, você será redirecionado para a página de login novamente (caso não consiga fazer o login, atualize a página e tente novamente).**
 
 <br>
+
   
 * **Com o login realizado, você será redirecionado para o seu feed inicial.**
 
