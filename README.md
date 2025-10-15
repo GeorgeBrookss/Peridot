@@ -117,6 +117,7 @@ A aplicação está no ar e pode ser acessada através dos seguintes links:
   
 ![Feed inicial](assets/Pesquisa-Usuarios.png)
 
+<br>
 
 ![Feed inicial](assets/Pesquisa-Postagem.png)
 
