@@ -76,6 +76,6 @@ A aplicação está no ar e pode ser acessada através dos seguintes links:
 * **Ao entrar no site essa vai ser a primeira página que irá visualizar:**
 ![Tela inicial](assets/Tela-inicial.png)
 
-* **Clique em 'Cadastrar' e será redirecionado para a página de cadastro:**
+* **Clique em 'Cadastrar' e será redirecionado para a página de cadastro. Preencha os dados seguindo o formulário corretamente:**
 ![Página de cadastro](assets/Tela-Cadastro.png)
 
