@@ -73,3 +73,5 @@ A aplicação está no ar e pode ser acessada através dos seguintes links:
 
 
 ## Tutorial
+* **Ao entrar no site essa vai ser a primeira página que irá visualizar:**
+![Tela inicial](assets/Tela-Inicial)
