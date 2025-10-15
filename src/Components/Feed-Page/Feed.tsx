@@ -386,6 +386,187 @@ const Feed = () => {
         </Styled.MenuArea>
         <div>
           <Styled.PostArea>
+            <div className="RenderMobile">
+              <h1 className="logoMobile" onClick={() => navigate('/feed')}>
+                <img src={Logo} alt="Logo" /> Peridot .
+              </h1>
+              <Styled.MenuOptionsMobile>
+                <Styled.MenuProfileMobile>
+                  <li>
+                    <a href="#">
+                      <img
+                        onClick={() => navigate('/users/me')}
+                        src={userData?.profile_picture || ProfilePlaceholder}
+                        alt="Foto de perfil"
+                      />
+                    </a>
+                  </li>
+
+                  <div>
+                    <li>
+                      <a
+                        onClick={() => navigate('/users/me')}
+                        className="DisplayName"
+                        href="#"
+                      >
+                        {userData?.display_name || 'Carregando...'}
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        style={{ color: '#c3ff00' }}
+                        onClick={() => navigate('/users/me')}
+                        className="DisplayName"
+                        href="#"
+                      >
+                        @{userData?.username || 'Carregando...'}
+                      </a>
+                    </li>
+                  </div>
+                </Styled.MenuProfileMobile>
+                <li>
+                  <a onClick={() => navigate('/feed')} href="#">
+                    Inicio
+                  </a>
+                </li>
+                <li>
+                  <a onClick={() => navigate('/users/me')} href="#">
+                    Perfil
+                  </a>
+                </li>
+                <li>
+                  <a onClick={HandleExit} href="#">
+                    Sair
+                  </a>
+                </li>
+              </Styled.MenuOptionsMobile>
+              <Styled.SearchCampMobile>
+                <h3>Pesquisar Usuários</h3>
+
+                <input
+                  type="search"
+                  name="search"
+                  placeholder="Buscar perfis e posts..."
+                  value={searchQuery}
+                  onFocus={handleSearchClick}
+                  onBlur={handleBlur}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
+                {showOverlay && (
+                  <Styled.SearchResultsOverlay>
+                    {isSearching && <p>Buscando...</p>}
+                    {searchResults.users.length > 0 && (
+                      <>
+                        <Styled.SearchSectionTitle>
+                          Usuários
+                        </Styled.SearchSectionTitle>
+                        <Styled.SearchList>
+                          {searchResults.users.map((user) => (
+                            <Styled.SuggestCamp key={user.id}>
+                              <Styled.SearchListItem
+                                onMouseDown={() =>
+                                  navigate(`/users/${user.id}`)
+                                }
+                              >
+                                <Styled.SearchResultImage
+                                  src={
+                                    user.profile_picture || ProfilePlaceholder
+                                  }
+                                  alt={user.username}
+                                />
+                                <Styled.UserInfo>
+                                  <Styled.UserDisplayName>
+                                    {user.display_name}
+                                  </Styled.UserDisplayName>
+                                  <Styled.UserNameSearch>
+                                    @{user.username}
+                                  </Styled.UserNameSearch>
+                                </Styled.UserInfo>
+                              </Styled.SearchListItem>
+                            </Styled.SuggestCamp>
+                          ))}
+                        </Styled.SearchList>
+                      </>
+                    )}
+                    {searchResults.posts.length > 0 && (
+                      <>
+                        <Styled.SearchSectionTitle>
+                          Postagens
+                        </Styled.SearchSectionTitle>
+                        <Styled.SearchList>
+                          {searchResults.posts.map((post) => (
+                            <Styled.SuggestCamp key={post.id}>
+                              <Styled.SearchListItem
+                                onMouseDown={() => HandleComments(post.id)}
+                              >
+                                <Styled.PostAuthorImage
+                                  src={
+                                    post.author.profile_picture ||
+                                    ProfilePlaceholder
+                                  }
+                                  alt={post.author.username}
+                                />
+                                <Styled.PostInfo>
+                                  <Styled.PostAuthorUsername>
+                                    @{post.author.username}
+                                  </Styled.PostAuthorUsername>
+                                  <Styled.PostSnippet>
+                                    {post.content.substring(0, 40)}...
+                                  </Styled.PostSnippet>
+                                </Styled.PostInfo>
+                              </Styled.SearchListItem>
+                            </Styled.SuggestCamp>
+                          ))}
+                        </Styled.SearchList>
+                      </>
+                    )}
+                    {!isSearching &&
+                      searchQuery.trim().length >= 2 &&
+                      searchResults.users.length === 0 &&
+                      searchResults.posts.length === 0 && (
+                        <p>Nenhum resultado encontrado para {searchQuery}</p>
+                      )}
+                  </Styled.SearchResultsOverlay>
+                )}
+
+                <div className="mbLike">
+                  <h3>Novidades</h3>
+                  <ul>
+                    <Styled.SuggestCampMobile>
+                      {Array.isArray(suggestedPosts) &&
+                      suggestedPosts.length > 0 ? (
+                        suggestedPosts.slice(0, 2).map((post) => (
+                          <li style={{ width: '150px' }} key={post.id}>
+                            <a onClick={() => HandleComments(post.id)} href="#">
+                              <strong>
+                                {post.author.profile_picture ? (
+                                  <Styled.SuggestedPostProfilePicture
+                                    src={post.author.profile_picture}
+                                    alt={`Foto de perfil de ${post.author.username}`}
+                                  />
+                                ) : (
+                                  <img
+                                    src={ProfilePlaceholder}
+                                    alt="Placeholder"
+                                  />
+                                )}
+                                <h4>{post.author.display_name}</h4>
+                                <h4>@{post.author.username}:</h4>
+                              </strong>
+                              <br />
+                              <h5>{post.content.substring(0, 30)}...</h5>
+                            </a>
+                          </li>
+                        ))
+                      ) : (
+                        <li>Nenhuma sugestão encontrada.</li>
+                      )}
+                    </Styled.SuggestCampMobile>
+                  </ul>
+                </div>
+              </Styled.SearchCampMobile>
+            </div>
             <h3>Novidades para você!</h3>
             <form onSubmit={HandleSubmitPost}>
               <div className="postarea">

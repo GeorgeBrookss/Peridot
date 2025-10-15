@@ -2,8 +2,78 @@ import styled from 'styled-components'
 import backgroundFeed from '../../images/FeedBackgrond.jpg'
 
 export const Background = styled.div`
-  background-color: #000;
   background-image: url('${backgroundFeed}');
+`
+export const SearchCampMobile = styled.div`
+  display: none;
+  @media (min-width: 320px) and (max-width: 1610px) {
+    display: block;
+    height: 350px;
+    margin-bottom: 20px;
+    h3 {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    ul {
+      display: flex;
+    }
+
+    input {
+      display: block;
+      margin: 0 auto;
+      height: 2vh;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #ffeeee11;
+      background-color: #f3fdedff;
+    }
+    .mbLike {
+      margin-top: 40px;
+
+      img {
+        max-width: 30px;
+        max-height: 30px;
+        margin-left: 12px;
+        border-radius: 12px;
+        margin-top: 12px;
+      }
+
+      h5 {
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+        text-align: center;
+      }
+
+      h4 {
+        margin-left: 12px;
+        width: 10px;
+      }
+
+      ul {
+        list-style: none;
+        margin-top: 10px;
+      }
+    }
+  }
+`
+export const SuggestCampMobile = styled.div`
+  display: none;
+
+  @media (min-width: 320px) and (max-width: 1610px) {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+    a {
+      text-decoration: none;
+      color: aliceblue;
+    }
+    li {
+      margin-bottom: 20px;
+      background: linear-gradient(#b7ff7c21, #71f50554);
+      border-radius: 20px;
+      border: 1px solid #bdffbb7f;
+    }
+  }
 `
 
 export const BackgroundFeed = styled.div`
@@ -23,6 +93,10 @@ export const BackgroundFeed = styled.div`
       max-height: 30px;
     }
   }
+  @media (min-width: 320px) and (max-width: 767px) {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 `
 export const ImageUpload = styled.button`
   bottom: 10px;
@@ -41,6 +115,9 @@ export const ImageUpload = styled.button`
 export const PostArea = styled.div`
   margin: 0 auto;
   justify-items: center;
+  .logoMobile {
+    display: none;
+  }
   h3 {
     text-align: center;
   }
@@ -66,6 +143,53 @@ export const PostArea = styled.div`
     border: 1px solid #b1ffb12d;
     background: linear-gradient(#f3fdedff, #f3fdeda7);
   }
+  @media (min-width: 320px) and (max-width: 1023px) {
+    .postarea {
+      .blocl {
+        display: flex;
+        max-width: 20px;
+
+        button {
+          margin-right: 120px;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1384px) {
+    max-width: 400px;
+    .postarea {
+      display: block;
+
+      button {
+        display: flex;
+        margin: 0 auto;
+        justify-self: center;
+      }
+    }
+    textarea {
+      width: 300px;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 1023px) {
+    max-width: 300px;
+    margin: 0 auto;
+    .logoMobile {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+    .postarea {
+      display: block;
+      button {
+        display: flex;
+        margin: 0 auto;
+        justify-self: center;
+      }
+    }
+    textarea {
+      width: 300px;
+    }
+  }
 `
 export const MenuArea = styled.div`
   display: block;
@@ -77,6 +201,16 @@ export const MenuArea = styled.div`
 
   h1 {
     cursor: 'pointer';
+  }
+  @media (min-width: 1240px) and (max-width: 1480px) {
+    margin-left: 2vh;
+  }
+  @media (min-width: 1024px) and (max-width: 1384px) {
+    margin-left: 0;
+    margin-right: 1vh;
+  }
+  @media (min-width: 320px) and (max-width: 1023px) {
+    display: none;
   }
 `
 export const MenuOptions = styled.ul`
@@ -108,6 +242,10 @@ export const MenuProfile = styled.div`
     max-width: 50px;
     border-radius: 10px;
     max-height: 50px;
+  }
+  @media (min-width: 768px) and (max-width: 1384px) {
+    gap: 2;
+    display: block;
   }
 `
 export const UserName = styled.a`
@@ -162,6 +300,10 @@ export const SearchCamp = styled.div`
       margin-top: 10px;
     }
   }
+
+  @media (min-width: 320px) and (max-width: 1610px) {
+    display: none;
+  }
 `
 export const SuggestCamp = styled.div`
   padding: 2px;
@@ -174,6 +316,9 @@ export const SuggestCamp = styled.div`
     background: linear-gradient(#b7ff7c21, #71f50554);
     border-radius: 20px;
     border: 1px solid #bdffbb7f;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    display: none;
   }
 `
 export const PostContainer = styled.div`
@@ -210,6 +355,18 @@ export const FeedCamp = styled.div`
     text-align: center;
     max-height: fit-content;
   }
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 300px;
+  }
+  @media (min-width: 935px) and (max-width: 1024px) {
+    width: 500px;
+  }
+  @media (min-width: 1024px) and (max-width: 1140px) {
+    width: 590px;
+  }
+  @media (min-width: 1140px) and (max-width: 1425px) {
+    width: 600px;
+  }
 `
 export const PostButton = styled.button`
   background-color: transparent;
@@ -244,6 +401,9 @@ export const PostContent = styled.div`
   background: linear-gradient(#f0ffe1d0, #f0ffe197);
   margin: 20px;
   font-family: Arial, Helvetica, sans-serif;
+  @media (min-width: 320px) and (max-width: 1424px) {
+    width: 90%;
+  }
 `
 export const SelectedImagePreviewContainer = styled.div`
   margin-top: 10px;
@@ -313,6 +473,9 @@ export const PostImage = styled.img`
   border-radius: 10px;
   margin-top: 10px;
   margin: 0 auto;
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 250px;
+  }
 `
 
 export const PostButtonsContainer = styled.div.attrs({
@@ -432,4 +595,71 @@ export const PostSnippet = styled.p`
 export const SuggestedPostProfilePicture = styled.img`
   width: 24px;
   height: 24px;
+`
+export const MenuProfileMobile = styled.div`
+  @media (min-width: 320px) and (max-width: 1023px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+      rgba(87, 194, 34, 0.9),
+      rgba(32, 122, 11, 0.61)
+    );
+    gap: 12px;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    img {
+      max-width: 50px;
+      max-height: 50px;
+      border-radius: 20px;
+    }
+    ul,
+    li {
+      list-style: none;
+      a {
+        color: #ffffffff;
+        text-decoration: none;
+      }
+    }
+  }
+`
+
+export const MenuOptionsMobile = styled.div`
+  display: none;
+  @media (min-width: 320px) and (max-width: 1023px) {
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(87, 194, 34, 0.9), rgba(0, 0, 0, 0.61));
+    gap: 12px;
+    padding: 10px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    font-weight: 700;
+
+    img {
+      max-width: 50px;
+      max-height: 50px;
+      border-radius: 20px;
+    }
+
+    ul,
+    li {
+      list-style: none;
+      a {
+        color: #fcfcfcff;
+        margin-right: 20px;
+        text-decoration: none;
+      }
+    }
+  }
 `
