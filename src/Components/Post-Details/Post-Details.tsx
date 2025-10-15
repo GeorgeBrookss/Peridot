@@ -563,6 +563,7 @@ const PostDetails = () => {
                     {userData?.id === comment.author.id && (
                       <div style={{ marginLeft: 'auto', display: 'flex' }}>
                         <button
+                          type="button"
                           onClick={() => {
                             setEditingCommentId(comment.id)
                             setEditingCommentContent(comment.content)
@@ -577,6 +578,7 @@ const PostDetails = () => {
                           Editar
                         </button>
                         <button
+                          type="button"
                           onClick={() => HandleDeleteComment(comment.id)}
                           style={{
                             all: 'unset',
