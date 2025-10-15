@@ -113,15 +113,38 @@ A aplicação está no ar e pode ser acessada através dos seguintes links:
 
 
 * **Clicando no Input de pesquisa, é possivel procurar por usuários e posts, ao clicar em um usuário é redirecionado para o perfil do mesmo**
-* a pesquisa ativa a partir do segundo caractere automaticamente, os resultados são listados permitindo scroll
+* a pesquisa ativa a partir do segundo caractere automaticamente, os resultados são listados permitindo scroll.
 
   
-* Resultado de usuários
+* Resultado de usuários:
   
 ![Feed inicial](assets/Pesquisa-Usuarios.png)
 
 <br>
-* Resultado de postagens
+* Resultado de postagens:
 
 ![Feed inicial](assets/Pesquisa-Postagem.png)
 
+<br>
+
+* **Ao entrar no perfil de um usuário, você verá a opção de segui-lo (ou deixar de seguir caso já esteja seguindo):**
+
+
+* normal:
+![Feed inicial](assets/Perfil-de-Terceiros.png)
+
+
+* seguindo:
+![Feed inicial](assets/Seguindo.png)
+
+
+<br>
+
+* **É possivel ver a lista de seguidores e seguindo no perfil do usuário:**
+* Também é possivel entrar no perfil dos usuários listados 
+
+* Lista de seguidores:
+![Feed inicial](assets/Lista-Seguidores.png)
+
+* Lista de seguindo:
+![Feed inicial](assets/Lista-Seguindo.png)
