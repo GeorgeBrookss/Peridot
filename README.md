@@ -83,14 +83,16 @@ A aplicação está no ar e pode ser acessada através dos seguintes links:
 
   <br>
   
-* **Com o login realizado, irá ser redirecionado para o seu feed inicial. Como sua conta é nova e não segue nenhum usuário, os unicos posts disponiveis são os de sugestão (últimos posts enviados por usuários diversos).**
+* **Com o login realizado, irá ser redirecionado para o seu feed inicial.**
 ![Feed inicial](assets/Tela-Feed-Inicial.png)
 
-* **Com o login realizado, irá ser redirecionado para o seu feed inicial. Como sua conta é nova e não segue nenhum usuário, os unicos posts disponiveis são os de sugestão (últimos posts enviados por usuários diversos).**
+* **Como sua conta é nova e não segue nenhum usuário, os unicos posts disponiveis são os de sugestão (últimos posts enviados por usuários diversos).**
 ![Feed inicial](assets/Sugestao.png)
 
   <br>
 
+* **Clicando no input central ao topo da tela você pode digitar seus Posts:**
+![Feed inicial](assets/Digitando-Postagem.png)
 
-
-
+* **Caso deseje, é possivel atribuir uma imagem ou gif na sua postagem:**
+![Feed inicial](assets/Adicionando-Imagem.png)
