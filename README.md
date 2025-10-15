@@ -125,6 +125,13 @@ A aplicação está no ar e pode ser acessada através dos seguintes links:
 
 ![Feed inicial](assets/Pesquisa-Postagem.png)
 
+
+* Você pode clicar no botão 'Editar' em verde para editar o texto da sua postagem
+* (não é possivel editar a imagem da postagem, caso queira remover clique no botão 'Excluir' em vermelho para apagar a postagem)
+
+*Postagem durante edição:
+![Feed inicial](assets/Durante-Edicao.png)
+* quando estiver satisfeito com a edição. clique em Salvar Edição, se quiser cancelar a ação clique em Cancelar.
 <br>
 
 * **Ao entrar no perfil de um usuário, você verá a opção de segui-lo (ou deixar de seguir caso já esteja seguindo):**
