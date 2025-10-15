@@ -78,8 +78,10 @@ Siga os passos abaixo para explorar a rede social Peridot:
 ### 1. Cadastro e Login
 
 * **Ao entrar no site, essa será a primeira página que você irá visualizar:**
+  
   
 ![Tela inicial](assets/Tela-inicial.png)
+
 
 * **Clique em 'Cadastrar' e será redirecionado para a página de cadastro. Preencha os dados no formulário corretamente:**
   
