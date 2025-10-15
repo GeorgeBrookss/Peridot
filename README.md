@@ -166,7 +166,7 @@ A aplicação está no ar e pode ser acessada através dos seguintes links:
 ![Feed inicial](assets/Editar-Perfil.png)
 
 * nome editado:
-![Feed inicial](assets/![Feed inicial](assets/Editar-Perfil.png)
+![Feed inicial](assets/Nome-Editado.png)
 
 *(Após edição, quando atualizar sua página verá que seu nome já está editado em todos os campos disponiveis no site)
 
