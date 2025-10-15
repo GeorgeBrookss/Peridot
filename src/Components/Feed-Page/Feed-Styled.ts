@@ -129,7 +129,6 @@ export const PostArea = styled.div`
       .blocl {
         display: flex;
         max-width: 300px;
-        background-color: red;
 
         button {
           margin: 0 auto;
