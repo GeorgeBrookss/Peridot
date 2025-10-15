@@ -564,7 +564,8 @@ const PostDetails = () => {
                   {userData?.id === comment.author.id && (
                     <div
                       style={{
-                        marginLeft: 'auto',
+                        marginLeft: '20%',
+                        marginRight: '30%',
                         display: 'flex',
                         gap: '20px'
                       }}
