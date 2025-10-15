@@ -454,71 +454,71 @@ const Feed = () => {
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
                 {showOverlay && (
-                  <Styled.SearchResultsOverlay>
+                  <Styled.SearchResultsOverlayMobile>
                     {isSearching && <p>Buscando...</p>}
                     {searchResults.users.length > 0 && (
                       <>
-                        <Styled.SearchSectionTitle>
+                        <Styled.SearchSectionTitleMobile>
                           Usuários
-                        </Styled.SearchSectionTitle>
-                        <Styled.SearchList>
+                        </Styled.SearchSectionTitleMobile>
+                        <Styled.SearchListMobile>
                           {searchResults.users.map((user) => (
-                            <Styled.SuggestCamp key={user.id}>
-                              <Styled.SearchListItem
+                            <Styled.SuggestCampMobile key={user.id}>
+                              <Styled.SearchListItemMobile
                                 onMouseDown={() =>
                                   navigate(`/users/${user.id}`)
                                 }
                               >
-                                <Styled.SearchResultImage
+                                <Styled.SearchResultImageMobile
                                   src={
                                     user.profile_picture || ProfilePlaceholder
                                   }
                                   alt={user.username}
                                 />
-                                <Styled.UserInfo>
-                                  <Styled.UserDisplayName>
+                                <Styled.UserInfoMobile>
+                                  <Styled.UserDisplayNameMobile>
                                     {user.display_name}
-                                  </Styled.UserDisplayName>
-                                  <Styled.UserNameSearch>
+                                  </Styled.UserDisplayNameMobile>
+                                  <Styled.UserNameSearchMobile>
                                     @{user.username}
-                                  </Styled.UserNameSearch>
-                                </Styled.UserInfo>
-                              </Styled.SearchListItem>
-                            </Styled.SuggestCamp>
+                                  </Styled.UserNameSearchMobile>
+                                </Styled.UserInfoMobile>
+                              </Styled.SearchListItemMobile>
+                            </Styled.SuggestCampMobile>
                           ))}
-                        </Styled.SearchList>
+                        </Styled.SearchListMobile>
                       </>
                     )}
                     {searchResults.posts.length > 0 && (
                       <>
-                        <Styled.SearchSectionTitle>
+                        <Styled.SearchSectionTitleMobile>
                           Postagens
-                        </Styled.SearchSectionTitle>
-                        <Styled.SearchList>
+                        </Styled.SearchSectionTitleMobile>
+                        <Styled.SearchListMobile>
                           {searchResults.posts.map((post) => (
-                            <Styled.SuggestCamp key={post.id}>
-                              <Styled.SearchListItem
+                            <Styled.SuggestCampMobile key={post.id}>
+                              <Styled.SearchListItemMobile
                                 onMouseDown={() => HandleComments(post.id)}
                               >
-                                <Styled.PostAuthorImage
+                                <Styled.PostAuthorImageMobile
                                   src={
                                     post.author.profile_picture ||
                                     ProfilePlaceholder
                                   }
                                   alt={post.author.username}
                                 />
-                                <Styled.PostInfo>
-                                  <Styled.PostAuthorUsername>
+                                <Styled.PostInfoMobile>
+                                  <Styled.PostAuthorUsernameMobile>
                                     @{post.author.username}
-                                  </Styled.PostAuthorUsername>
-                                  <Styled.PostSnippet>
+                                  </Styled.PostAuthorUsernameMobile>
+                                  <Styled.PostSnippetMobile>
                                     {post.content.substring(0, 40)}...
-                                  </Styled.PostSnippet>
-                                </Styled.PostInfo>
-                              </Styled.SearchListItem>
-                            </Styled.SuggestCamp>
+                                  </Styled.PostSnippetMobile>
+                                </Styled.PostInfoMobile>
+                              </Styled.SearchListItemMobile>
+                            </Styled.SuggestCampMobile>
                           ))}
-                        </Styled.SearchList>
+                        </Styled.SearchListMobile>
                       </>
                     )}
                     {!isSearching &&
@@ -527,7 +527,7 @@ const Feed = () => {
                       searchResults.posts.length === 0 && (
                         <p>Nenhum resultado encontrado para {searchQuery}</p>
                       )}
-                  </Styled.SearchResultsOverlay>
+                  </Styled.SearchResultsOverlayMobile>
                 )}
 
                 <div className="mbLike">
@@ -541,7 +541,7 @@ const Feed = () => {
                             <a onClick={() => HandleComments(post.id)} href="#">
                               <strong>
                                 {post.author.profile_picture ? (
-                                  <Styled.SuggestedPostProfilePicture
+                                  <Styled.SuggestedPostProfilePictureMobile
                                     src={post.author.profile_picture}
                                     alt={`Foto de perfil de ${post.author.username}`}
                                   />

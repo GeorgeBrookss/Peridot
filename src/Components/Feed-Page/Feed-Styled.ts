@@ -56,25 +56,6 @@ export const SearchCampMobile = styled.div`
     }
   }
 `
-export const SuggestCampMobile = styled.div`
-  display: none;
-
-  @media (min-width: 320px) and (max-width: 1610px) {
-    margin-top: 20px;
-    display: flex;
-    gap: 12px;
-    a {
-      text-decoration: none;
-      color: aliceblue;
-    }
-    li {
-      margin-bottom: 20px;
-      background: linear-gradient(#b7ff7c21, #71f50554);
-      border-radius: 20px;
-      border: 1px solid #bdffbb7f;
-    }
-  }
-`
 
 export const BackgroundFeed = styled.div`
   color: #ffffffff;
@@ -545,6 +526,11 @@ export const SearchListItem = styled.li`
   padding-bottom: 20px;
   display: flex;
   align-items: center;
+  @media (min-width: 320px) and (max-width: 1023px) {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
 `
 
 export const SearchResultImage = styled.img`
@@ -555,6 +541,12 @@ export const SearchResultImage = styled.img`
   margin-bottom: 10px;
   margin-left: 20%;
   margin-top: 20px;
+  @media (min-width: 320px) and (max-width: 1023px) {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    max-height: 200px;
+  }
 `
 
 export const UserInfo = styled.div`
@@ -662,4 +654,115 @@ export const MenuOptionsMobile = styled.div`
       }
     }
   }
+`
+export const SearchResultsOverlayMobile = styled.div`
+  display: none;
+
+  @media (min-width: 320px) and (max-width: 1610px) {
+    display: block;
+    position: fixed;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: auto;
+    max-height: 60vh;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #fff6f6c0;
+  }
+`
+
+export const SearchSectionTitleMobile = styled.h4`
+  margin-bottom: 10px;
+`
+
+export const SearchListMobile = styled.ul`
+  list-style: none;
+`
+export const SuggestCampMobile = styled.div`
+  display: none;
+
+  @media (min-width: 320px) and (max-width: 1610px) {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+    a {
+      text-decoration: none;
+      color: aliceblue;
+    }
+    li {
+      text-align: center;
+      margin-right: 1px;
+      margin-bottom: 20px;
+      background: linear-gradient(#b7ff7c21, #71f50554);
+      border-radius: 20px;
+      border: 1px solid #bdffbb7f;
+    }
+  }
+`
+export const SearchListItemMobile = styled.li`
+  cursor: pointer;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  @media (min-width: 320px) and (max-width: 1023px) {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+`
+export const SearchResultImageMobile = styled.img`
+  max-width: 200px;
+  max-height: 200px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  margin-left: 20%;
+  margin-top: 20px;
+  @media (min-width: 320px) and (max-width: 1023px) {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    max-height: 200px;
+  }
+`
+export const UserInfoMobile = styled.div`
+  margin-left: 0;
+  padding-right: 30px;
+`
+export const UserDisplayNameMobile = styled.strong`
+  display: block;
+`
+
+export const UserNameSearchMobile = styled.small`
+  display: block;
+`
+export const PostAuthorImageMobile = styled.img`
+  max-width: 100px;
+  max-height: 100px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 10px;
+`
+export const PostInfoMobile = styled.div``
+
+export const PostAuthorUsernameMobile = styled.strong`
+  display: block;
+  margin-left: 10px;
+`
+
+export const PostSnippetMobile = styled.p`
+  display: block;
+  margin-left: 40px;
+  margin-top: 30px;
+  font-size: 24px;
+`
+
+export const SuggestedPostProfilePictureMobile = styled.img`
+  width: 24px;
+  height: 24px;
 `
