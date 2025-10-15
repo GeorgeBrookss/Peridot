@@ -1,4 +1,4 @@
-# Boilerplate React com TypeScript, Styled Components & ESLint
+# Peridot — A nova rede social para compartilhar seus gostos
 
 ## Descrição do Projeto
 
