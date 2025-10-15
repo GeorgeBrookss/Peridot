@@ -208,3 +208,14 @@ Siga os passos abaixo para explorar a rede social Peridot:
 
 * Após a edição:
 ![Foto de Perfil Atualizada](assets/Perfil-Usuario-Atualizado.png)
+
+
+### 7. Aproveite!
+
+* **Crie o seu perfil e se conecte com outros usuários**
+* Compartilhe seus gostos.
+* Personalize seu perfil.
+* Curta postagens que se interessar.
+* Lembre-se sempre de ser respeitoso e amigável com todos os usuários.
+
+
