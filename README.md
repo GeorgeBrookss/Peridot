@@ -88,10 +88,12 @@ Siga os passos abaixo para explorar a rede social Peridot:
 * **Após realizar o cadastro com sucesso, você será redirecionado para a página de login novamente (caso não consiga fazer o login, atualize a página e tente novamente).**
 
 <br>
+
   
 * **Com o login realizado, você será redirecionado para o seu feed inicial.**
 
-  
+
+  
 ![Feed inicial](assets/Tela-Feed-Inicial.png)
 
 * **Como sua conta é nova e não segue nenhum usuário, os únicos posts disponíveis são os de sugestão (últimos posts enviados por usuários diversos).**
