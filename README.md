@@ -218,4 +218,7 @@ Siga os passos abaixo para explorar a rede social Peridot:
 * Curta postagens que se interessar.
 * Lembre-se sempre de ser respeitoso e amigável com todos os usuários.
 
+* Teste em diferentes dispositivos e aproveite a responsividade!
+
+![Foto de Perfil Atualizada](assets/Mockup-Peridot.png)
 
