@@ -78,10 +78,8 @@ Siga os passos abaixo para explorar a rede social Peridot:
 ### 1. Cadastro e Login
 
 * **Ao entrar no site, essa será a primeira página que você irá visualizar:**
-  
   
 ![Tela inicial](assets/Tela-inicial.png)
-
 
 * **Clique em 'Cadastrar' e será redirecionado para a página de cadastro. Preencha os dados no formulário corretamente:**
   
@@ -90,20 +88,16 @@ Siga os passos abaixo para explorar a rede social Peridot:
 * **Após realizar o cadastro com sucesso, você será redirecionado para a página de login novamente (caso não consiga fazer o login, atualize a página e tente novamente).**
 
 <br>
-
   
 * **Com o login realizado, você será redirecionado para o seu feed inicial.**
 
-
-  
+  
 ![Feed inicial](assets/Tela-Feed-Inicial.png)
 
 * **Como sua conta é nova e não segue nenhum usuário, os únicos posts disponíveis são os de sugestão (últimos posts enviados por usuários diversos).**
 
-
-
   
-![Feed inicial](assets/Sugestao.png)
+![Sugestão de Posts](assets/Sugestao.png)
 
 <br>
 
@@ -134,10 +128,10 @@ Siga os passos abaixo para explorar a rede social Peridot:
 ### 3. Interagindo com Posts
 
 * **As formas de interagir com os posts (tanto no feed principal quanto nos perfis) são:**
-    * Dando 'Like':
-    ![Botão de Like](assets/Like.png)
-    * E comentando:
-    ![Espaço para Comentário](assets/Espaco-Comentario.png)
+    * Dando 'Like':
+    ![Botão de Like](assets/Like.png)
+    * E comentando:
+    ![Espaço para Comentário](assets/Espaco-Comentario.png)
 
 * **Você também pode ver os detalhes da postagem, incluindo a seção de comentários.**
 
@@ -168,6 +162,11 @@ Siga os passos abaixo para explorar a rede social Peridot:
 * Perfil de terceiro (opção Deixar de Seguir):
 ![Perfil com usuário já Seguido](assets/Seguindo.png)
 
+* **O perfil de cada usuário contém um feed com todos os posts feitos por ele. É possível interagir com os posts (curtir e comentar) de dentro do perfil.**
+
+* **Após seguir um usuário, as postagens dele aparecerão no seu feed (tela principal), como mostrado abaixo:**
+![Feed Atualizado com Posts de Seguidores](assets/Tela-Feed-Atualizada.png)
+
 * **É possível ver a lista de seguidores e de quem o usuário está seguindo no perfil dele. Também é possível entrar no perfil dos usuários listados.**
 
 * Lista de seguidores:
@@ -175,13 +174,6 @@ Siga os passos abaixo para explorar a rede social Peridot:
 
 * Lista de 'Seguindo':
 ![Lista de quem está Seguindo](assets/Lista-Seguindo.png)
-
-* **O perfil de cada usuário contém um feed com todos os posts feitos por ele. É possível interagir com os posts (curtir e comentar) de dentro do perfil.**
-
-
-*Após seguir um usuário as postagens do mesmo aparecer no seu feed.
-
-![Lista de quem está Seguindo](assets/Tela-Feed-Atualizada.png)
 
 <br>
 
@@ -209,16 +201,16 @@ Siga os passos abaixo para explorar a rede social Peridot:
 * Após a edição:
 ![Foto de Perfil Atualizada](assets/Perfil-Usuario-Atualizado.png)
 
+<br>
 
 ### 7. Aproveite!
 
-* **Crie o seu perfil e se conecte com outros usuários**
+* **Crie o seu perfil e se conecte com outros usuários.**
 * Compartilhe seus gostos.
 * Personalize seu perfil.
 * Curta postagens que se interessar.
 * Lembre-se sempre de ser respeitoso e amigável com todos os usuários.
 
-* Teste em diferentes dispositivos e aproveite a responsividade!
+* **Teste em diferentes dispositivos e aproveite a responsividade!**
 
-![Foto de Perfil Atualizada](assets/Mockup-Peridot.png)
-
+![Mockup do Peridot em diferentes dispositivos](assets/Mockup-Peridot.png)
