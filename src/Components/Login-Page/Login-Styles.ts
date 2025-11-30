@@ -5,6 +5,7 @@ export const BackgroundStyled = styled.div`
   background-image: url(${Background});
   background-size: cover;
   min-height: 100vh;
+  justify-content: center;
   justify-items: center;
   color: #fbebf5ff;
   padding-top: 20vh;
@@ -20,6 +21,7 @@ export const LoginPageSection = styled.div`
   background: linear-gradient(#5ce65cc5, #5ce65c74);
   border-radius: 40px;
   display: flex;
+  justify-content: center;
   width: 600px;
   h1 {
     margin-top: 6vh;
@@ -58,6 +60,7 @@ export const FormStyled = styled.div`
   font-size: 20px;
   font-weight: bold;
   width: 200px;
+  justify-content: center;
 
   input {
     margin-bottom: 15px;

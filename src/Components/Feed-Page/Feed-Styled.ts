@@ -67,6 +67,7 @@ export const BackgroundFeed = styled.div`
   color: #ffffffff;
   position: relative;
   justify-self: center;
+  justify-content: center;
   display: flex;
   min-height: 100vh;
   height: auto;
@@ -382,7 +383,11 @@ export const PostButton = styled.button`
 export const PostContent = styled.p`
   word-wrap: break-word;
   font-size: 20px;
-  width: 600px;
+  white-space: pre-wrap;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+  width: 100%;
+  max-width: 100%;
   border-radius: 20px;
   font-weight: 500;
   padding: 40px;

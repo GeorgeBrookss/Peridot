@@ -6,6 +6,7 @@ export const Background = styled.div`
   background-color: #000;
   background: radial-gradient(circle at 50% 30%, #0a3a0a 0%, #000000 70%);
   min-height: 100vh;
+  justify-content: center;
   background-attachment: fixed;
 `
 
@@ -13,6 +14,7 @@ export const BackgroundFeed = styled.div`
   color: #ffffffff;
   position: relative;
   justify-self: center;
+  justify-content: center;
   display: flex;
   min-height: 100vh;
   height: auto;
