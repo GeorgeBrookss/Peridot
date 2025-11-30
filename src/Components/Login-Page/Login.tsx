@@ -33,7 +33,7 @@ const LoginPage = () => {
       if (access) {
         localStorage.setItem('authToken', access)
         console.log('Login bem-sucedido!', response.data)
-        navigate('/feed')
+        window.location.href = '/feed'
       } else {
         setError('Erro: O servidor não retornou o token de acesso.')
       }
