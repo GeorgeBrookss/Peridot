@@ -657,6 +657,7 @@ export const MenuOptionsMobile = styled.div`
     width: 100%;
     border-top-left-radius: 15px;
     font-weight: 700;
+    border-top-right-radius: 15px;
 
     img {
       max-width: 50px;
@@ -671,6 +672,8 @@ export const MenuOptionsMobile = styled.div`
         color: #fcfcfcff;
         margin-right: 20px;
         text-decoration: none;
+        text-align: center;
+        margin: 20px;
       }
     }
   }
