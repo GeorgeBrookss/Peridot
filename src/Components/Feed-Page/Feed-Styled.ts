@@ -387,7 +387,7 @@ export const PostContent = styled.p`
   box-sizing: border-box;
   overflow-wrap: anywhere;
   width: 100%;
-  max-width: 100%;
+  max-width: 600px;
   border-radius: 20px;
   font-weight: 500;
   padding: 40px;
