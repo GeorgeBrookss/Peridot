@@ -66,7 +66,7 @@ O projeto foi construído com as seguintes tecnologias e ferramentas:
 
 A aplicação está no ar e pode ser acessada através dos seguintes links:
 
-* **Front-end (Vercel):** https://peridot-smoky.vercel.app/
+* **Front-end (Vercel):** https://peridot-social.vercel.app/login
 * **Back-end (PythonAnywhere):** https://georgebks.pythonanywhere.com/api/
 
 <br>
